@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Changa&display=swap');
+header {
+    text-align: center;
+    border: 1px solid orangered;
+    font-family: 'Changa', sans-serif;
+    font-size: 300%;
+    color: orangered;
+    
+}
+
+
+html {
+    background-image: url("media/textures-abstract.jpg");
+}
+
+body {
+    border: 1px solid orangered;
+}
