@@ -1,61 +1,215 @@
 @import url('https://fonts.googleapis.com/css?family=Changa&display=swap');
 
-html {
-    background-image: url("media/textures-abstract.jpg");
+html{
+    background-color: black;
 }
 
-header h1{
-    text-align: center;
-    border: 1px solid orangered;
-    font-family: 'Changa', sans-serif;
-    font-size: 300%;
-    color: orangered;
+ul{
+    list-style-type: none;
+    margin: none;
+    padding: 5px;
+    background-color: #00A314;
 }
 
-/* modified sample code from w3schools.com (because i couldnt figure out how to align my rows/columns) */
-.column {
-  float: left;
-  width: 33%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* end modified sample code from w3schools.com*/
-
-#container1 aside{
-    border: 1px solid orangered;
-
+li{
+    display: inline;
     text-align: center;
     font-family: 'Changa', sans-serif;
-    font-size: 120%;
-    color: orangered;
+    font-size: 150%;
+    border-right: 1px solid black;
 }
 
-#container2 article{
-    border: 1px solid orangered;
-    color: orangered;
-    align-content: center;
-
+li:last-child {
+    border-right: none;
 }
 
-#container3 aside{
-    border: 1px solid orangered;
-
+li a{
     text-align: center;
-    font-family: 'Changa', sans-serif;
-    font-size: 120%;
-    color: orangered;
+    padding-right: 9.05%;
+    padding-left: 9.05%;
+    color: white;
+    background-color: #00A314;
+}
+
+li a:hover{
+    background-color: black;
+}
+
+li a:link{
+    text-decoration: none;
+}
+
+li a:visited{
+    text-decoration: none;
+}
+
+a:active{
+    background-color: black;
 }
 
 
-    text-align: center;
 
-    border: 1px solid orangered;
+div{
+    display: inline;
     font-family: 'Changa', sans-serif;
-    
-    color: orangered;
+    font-size: 150%;
+    color: white;
+}
+
+img{
+    border: #00A314;
+    float: left;
+}
+
+#comissions, #form{
+    display: inline;
+    font-family: 'Changa', sans-serif;
+    font-size: 150%;
+    color: white;
+}
+
+#form{
+    display: inline;
+    font-family: 'Changa', sans-serif;
+    font-size: 150%;
+    color: white;
+    text-decoration: none;
+}
+
+#form a:visited{
+    text-decoration: none;
+}
+
+#form a:link{
+    text-decoration: none;
+}
+
+ol{
+    font-family: 'Changa', sans-serif;
+    list-style-type: none;
+    display: inline-block;
+    background-color: orange;
+    color: white; 
+}
+
+ol a:hover{
+    background-color: black;
+}
+
+ol a:link{
+    text-decoration: none;
+}
+
+ol a:visited{
+    text-decoration: none;
+}
+
+ol a:active{
+    background-color: black;
+}
 
 
+
+/*Content/format taken from "https://www.w3schools.com/howto/howto_js_slideshow.asp"*/
+#background_info {
+    font-family: 'Changa', sans-serif;
+    font-size: 125%;
+    color: white;
+    text-decoration: none;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*End of use of content from W3Schools*/
